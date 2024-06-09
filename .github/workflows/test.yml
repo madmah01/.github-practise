@@ -31,7 +31,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Linter (ESLint)
-        run: npm run lint
+        run: npm run eslint
 
       - name: Formatter (Prettier)
         run: npm run prettier
