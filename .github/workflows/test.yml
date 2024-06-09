@@ -26,8 +26,12 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
+      - name: Initialization
+        run: npm init
+
+      # Runs a single command using the runners shell
       - name: Install dependencies
-        run: sudo npm install
+        run: npm install
 
       # Runs a set of commands using the runners shell
       - name: Linter (ESLint)
